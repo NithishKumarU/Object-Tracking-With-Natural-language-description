@@ -1,9 +1,3 @@
-# tensorflow-yolov4-tflite
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
-
-YOLOv4, YOLOv4-tiny Implemented in Tensorflow 2.0. 
-Convert YOLO v4, YOLOv3, YOLO tiny .weights to .pb, .tflite and trt format for tensorflow, tensorflow lite, tensorRT.
-<p align="center"><img src="data/helpers/demo.gif"\></p>
 
 ## Getting Started
 ### Conda (Recommended)
@@ -44,10 +38,6 @@ Copy and paste yolov4.weights from your downloads folder into the 'data' folder 
 If you want to use yolov4-tiny.weights, a smaller model that is faster at running detections but less accurate, download file here: https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights
 
 ## Using Custom Trained YOLOv4 Weights
-<strong>Learn How To Train Custom YOLOv4 Weights here: https://www.youtube.com/watch?v=mmj3nxGT2YQ </strong>
-
-USE MY LICENSE PLATE TRAINED CUSTOM WEIGHTS: https://drive.google.com/file/d/1EUPtbtdF0bjRtNjGv436vDY28EN5DXDH/view?usp=sharing
-
 Copy and paste your custom .weights file into the 'data' folder and copy and paste your custom .names into the 'data/classes/' folder.
 
 The only change within the code you need to make in order for your custom model to work is on line 14 of 'core/config.py' file.
