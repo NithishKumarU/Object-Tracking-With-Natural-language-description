@@ -51,6 +51,10 @@ python save_model.py --weights ./data/yolov4-tiny.weights --output ./checkpoints
 # custom yolov4
 python save_model.py --weights ./data/custom.weights --output ./checkpoints/custom-416 --input_size 416 --model yolov4 
 
+```
+
+##To Run yolov4 model without NLP
+```
 # Run yolov4 tensorflow model
 python detect.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --images ./data/images/kite.jpg
 
