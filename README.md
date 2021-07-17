@@ -20,14 +20,6 @@ pip install -r requirements.txt
 # TensorFlow GPU
 pip install -r requirements-gpu.txt
 ```
-### Nvidia Driver (For GPU, if you are not using Conda Environment and haven't set up CUDA yet)
-Make sure to use CUDA Toolkit version 10.1 as it is the proper version for the TensorFlow version used in this repository.
-https://developer.nvidia.com/cuda-10.1-download-archive-update2
-
-### Performance
-Check out how YOLOv4 compares to other object detection systems.
-
-<p align="center"><img src="data/helpers/performance.png" width="640"\></p>
 
 ## Downloading Official Pre-trained Weights
 YOLOv4 comes pre-trained and able to detect 80 classes. For easy demo purposes we will use the pre-trained weights.
@@ -47,7 +39,7 @@ Update the code to point at your custom .names file as seen below. (my custom .n
 <strong>Note:</strong> If you are using the pre-trained yolov4 then make sure that line 14 remains <strong>coco.names</strong>.
 
 ## YOLOv4 Using Tensorflow (tf, .pb model)
-To implement YOLOv4 using TensorFlow, first we convert the .weights into the corresponding TensorFlow model files and then run the model.
+To implement YOLOv4 using TensorFlow, first we convert the .weights into the corresponding TensorFlow model files.
 ```bash
 # Convert darknet weights to tensorflow
 ## yolov4
